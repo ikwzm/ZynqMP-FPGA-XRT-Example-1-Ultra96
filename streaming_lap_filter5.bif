@@ -1,0 +1,4 @@
+all:
+{
+	[destination_device = pl] streaming_lap_filter5.bit
+}

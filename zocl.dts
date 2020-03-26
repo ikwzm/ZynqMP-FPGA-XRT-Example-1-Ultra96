@@ -1,0 +1,29 @@
+/dts-v1/; /plugin/;
+/ {
+	fragment@0 {
+		target-path = "/fpga-full";
+		__overlay__ {
+			firmware-name = "streaming_lap_filter5.bin";
+		};
+        };
+	fragment@1 {
+		target-path = "/amba_pl@0";
+		__overlay__ {
+			#address-cells = <2>;
+			#size-cells = <1>;
+			zyxclmm_drm {
+				compatible = "xlnx,zocl";
+				status = "okay";
+				reg = <0x0 0xA0000000 0x10000>;
+			};
+			fclk0 {
+				compatible    = "ikwzm,fclkcfg-0.10.a";
+				clocks        = <&zynqmp_clk 0x47>;
+				insert-rate   = "100000000";
+				insert-enable = <1>;
+				remove-rate   = "1000000";
+				remove-enable = <0>;
+			};
+		};
+	};
+};
