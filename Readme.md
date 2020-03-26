@@ -59,3 +59,13 @@ total time = 0.001304 sec
 Success HW and SW results match
 ```
 
+## Refernce
+
+  * https://github.com/ikwzm/ZynqMP-FPGA-Linux
+  * https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu18.04-Ultra96
+  * https://github.com/ikwzm/ZynqMP-FPGA-XRT
+  * https://marsee101.blog.fc2.com/blog-entry-4823.html
+  * https://marsee101.blog.fc2.com/blog-entry-4824.html
+  * https://marsee101.blog.fc2.com/blog-entry-4825.html
+  * https://marsee101.blog.fc2.com/blog-entry-4826.html
+  
