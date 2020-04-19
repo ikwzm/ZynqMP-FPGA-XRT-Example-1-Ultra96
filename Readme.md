@@ -59,13 +59,23 @@ total time = 0.001304 sec
 Success HW and SW results match
 ```
 
-## Refernce
+## Reference
+
+### Github Repositories
 
   * https://github.com/ikwzm/ZynqMP-FPGA-Linux
   * https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu18.04-Ultra96
   * https://github.com/ikwzm/ZynqMP-FPGA-XRT
+
+### Documents in Japanese Language
+
   * https://marsee101.blog.fc2.com/blog-entry-4823.html
   * https://marsee101.blog.fc2.com/blog-entry-4824.html
   * https://marsee101.blog.fc2.com/blog-entry-4825.html
   * https://marsee101.blog.fc2.com/blog-entry-4826.html
-  
+  * https://qiita.com/ikwzm/items/0d3a8adfe725cd17f932
+  * https://qiita.com/ikwzm/items/d8013ea91125a3fc46aa
+  * https://qiita.com/ikwzm/items/6612eacc4a0d324a0a68
+  * https://qiita.com/ikwzm/items/58cfea3f9d0f42840511
+  * https://qiita.com/ikwzm/items/e70d8d0e44fe3784a708
+
