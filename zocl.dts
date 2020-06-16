@@ -10,11 +10,11 @@
 		target-path = "/amba_pl@0";
 		__overlay__ {
 			#address-cells = <2>;
-			#size-cells = <1>;
+			#size-cells = <2>;
 			zyxclmm_drm {
 				compatible = "xlnx,zocl";
 				status = "okay";
-				reg = <0x0 0xA0000000 0x10000>;
+				reg = <0x0 0xA0000000 0x0 0x10000>;
 			};
 			fclk0 {
 				compatible    = "ikwzm,fclkcfg-0.10.a";
