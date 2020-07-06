@@ -30,6 +30,14 @@ PYTHONPATH     : /opt/xilinx/xrt/python:
 
 ### Preparation of zocl
 
+#### Copy streaming_lap_filter5.bin to /lib/firmware/
+
+```console
+shell$ sudo cp streaming_lap_filter5.bin /lib/firmware/
+```
+
+#### Overlay device tree
+
 ```console
 shell$ sudo ./dtbocfg.rb --install zocl --dts zocl.dts
 shell$ dmesg | tail -12
@@ -45,6 +53,18 @@ shell$ dmesg | tail -12
 [  923.013275] fclkcfg amba_pl@0:fclk0: clock  enabled : 1
 [  923.013279] fclkcfg amba_pl@0:fclk0: remove rate    : 1000000
 [  923.013284] fclkcfg amba_pl@0:fclk0: remove enable  : 0
+```
+
+#### Check permission of /dev/dri/renderD128
+
+If the permission of /dev/dri/renderD128 is "crw-rw----", change to "crw-rw-rw-".
+
+```
+shell$ ls -la /dev/dri/renderD128
+crw-rw---- 1 root render 226, 128 Jul  7 06:51 /dev/dri/renderD128
+shell$ sudo chmod o+rw /dev/dri/renderD128
+shell$ ls -la /dev/dri/renderD128
+crw-rw-rw- 1 root render 226, 128 Jul  7 06:51 /dev/dri/renderD128
 ```
 
 ### Run streaming_lap_filter5.exe
